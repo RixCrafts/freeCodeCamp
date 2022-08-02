@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Survey Form Exercise</h1>
+      <p id="description">freeCodeCamp, "Build a Survey Form" exercise from the "Responsive Web Design" course.</p>
+    </header>    
+    <form id="survey-form">
+      <fieldset id="personal-info-container">
+        <legend>Personal information</legend>
+        <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required /></label>
+        <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email" required /></label>
+        <label id="number-label">Age: <input id="number" type="number" min='5' max='100' placeholder="Enter your age" /></label>
+        <label id="gender-label">Gender: 
+          <select id="dropdown">
+            <option value='0'>Select One</option>
+            <option value='m'>Male</option>
+            <option value='f'>Female</option>
+            <!-- <option value="o">Other</option> -->
+          </select></label>
+      </fieldset>
+      <fieldset id="civil-info-container">
+        <legend>Civil information</legend>
+        <label id="civil-status-label"><b>Civil Status:</b> <br /><input id="single-status" type="radio" name="civil-status" value="Single" /> Single <input id="merried-status" type="radio" name="civil-status" value="Merried" /> Merried</label>  
+        <label id="ocupation-label"><b>Ocupation(s):</b> <br />
+          <input id="full-time" type="checkbox" value="full-time" /> Full-time Job
+          <input id="part-time" type="checkbox" value="part-time" /> Part-time Job
+          <input id="self-employed" type="checkbox" value="self-employed" />Self-employed
+          </label>   
+      </fieldset>
+      <fieldset id="bio-container">
+        <legend>Bio</legend>
+        <textarea id="bio-textarea" rows="10" cols="50"></textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>

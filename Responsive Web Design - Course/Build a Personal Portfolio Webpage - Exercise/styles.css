@@ -56,11 +56,12 @@ header {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#welcome-section h1{
-    font-size: 5rem;;
+#welcome-section h1 {
+    font-size: 5rem;
+    ;
 }
 
-#welcome-section h1:nth-child(2){
+#welcome-section h1:nth-child(2) {
     font-size: 3.5rem;
 }
 
@@ -68,22 +69,22 @@ header {
     color: #BE3144;
 }
 
-#welcome-section>h2:first-of-type{
+#welcome-section>h2:first-of-type {
     font-size: 2rem;
 }
 
-#welcome-section > div{
+#welcome-section>div {
     margin-top: 75px;
 }
 
-#welcome-section > div > h2 {
+#welcome-section>div>h2 {
     display: inline-block;
     font-size: 1.2rem;
 }
 
 #web-dev_container {
     display: inline-block;
-    margin-left:10%;
+    margin-left: 10%;
     height: 50px;
     width: 350px;
     background: linear-gradient(45deg, #e34c26, #3c99dc, #f0db4f);
@@ -99,19 +100,20 @@ header {
 
 }
 
-#welcome-section>div:last-of-type{
+#welcome-section>div:last-of-type {
     margin-top: 30px;
 }
 
-#welcome-section > div:last-of-type h2, #welcome-section>div:last-of-type h3{
+#welcome-section>div:last-of-type h2,
+#welcome-section>div:last-of-type h3 {
     display: inline-block;
 }
 
-#welcome-section>div:last-of-type h3{
+#welcome-section>div:last-of-type h3 {
     font-size: 1.5rem;
 }
 
-#welcome-section>div:last-of-type h3:first-of-type{
+#welcome-section>div:last-of-type h3:first-of-type {
     margin-left: 7%;
 }
 
@@ -130,7 +132,7 @@ header {
 /* Main */
 /* Project Section */
 
-main{
+main {
     background-color: #45567d;
     padding: 100px 20px;
     text-align: center;
@@ -139,7 +141,7 @@ main{
     font-size: 1.2rem;
 }
 
-main hr{
+main hr {
     border: 2px solid #eee;
     width: 75%;
     max-width: 700px;
@@ -148,7 +150,7 @@ main hr{
     margin-top: 10px;
 }
 
-.projects-container{
+.projects-container {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
@@ -156,7 +158,7 @@ main hr{
     justify-content: center;
 }
 
-.project{
+.project-tile {
     min-height: 570px;
     flex-grow: 1;
     flex-shrink: 1;
@@ -166,28 +168,28 @@ main hr{
     margin: 0 10px 40px 10px;
 }
 
-.project:hover{
+.project-tile:hover {
     cursor: pointer;
 }
 
-.project a {
+.project-tile a {
     text-decoration: none;
     color: #eee;
     font-weight: bold;
 }
 
-.project-image-container{
+.project-image-container {
     height: 500px;
 }
 
-.project-image{
+.project-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: top;
 }
 
-.project-title{
+.project-title {
     height: 70px;
     border-radius: 0 0 5px 5px;
     background-color: #303841;
@@ -196,16 +198,16 @@ main hr{
     justify-content: center;
 }
 
-.project-title:hover .project-title__border{
+.project-title:hover .project-title__border {
     opacity: 1;
 }
 
-.title{
+.title {
     margin: 0 10px;
     font-weight: bold;
 }
 
-.project-title__border{
+.project-title__border {
     opacity: 0;
     transition: all .3s;
     font-weight: bold;
@@ -215,29 +217,28 @@ main hr{
 
 /* Footer */
 
-footer{
-    height: 100vh;
+footer {
     background-color: #303841;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
-.about-page{
+.about-page {
     text-align: center;
     color: #eee;
     padding-top: 180px;
 }
 
-.about-page h1{
+.about-page h1 {
     font-size: 3.5rem;
 }
 
-.about-page h3{
+.about-page h3 {
     font-family: 'Poppins', sans-serif;
     padding-top: 5px;
     font-weight: 50;
 }
 
-.about-dev{
+.about-dev {
     width: 80%;
     margin: 40px auto;
     display: flex;
@@ -246,40 +247,70 @@ footer{
     justify-content: space-evenly;
 }
 
-.social-link{
+.social-link {
     text-decoration: none;
     font-size: 1.5rem;
     color: #eee;
     transition: all .5s;
+    margin: 0 10px;
 }
 
-.social-link span{
+.social-link span {
     font-family: 'Poppins', sans-serif;
     font-weight: 100;
     line-height: 3.5rem;
 }
 
-.social-link:hover{
-    transform: translateY(10px) ;
+.social-link:hover {
+    transform: translateY(10px);
 }
 
-.foot-note{
-    margin-top:140px;
+.foot-note {
+    margin-top: 140px;
     border-top: 4px solid #BE3144;
     padding: 30px;
     display: flex;
 }
 
-.foot-note p{
+.foot-note p {
     font-family: 'Poppins', sans-serif;
     color: #eee;
 }
 
-.foot-note a{
+.foot-note a {
     text-decoration: none;
     color: #eee;
 }
 
-.foot-note p:last-of-type{
+.foot-note p:last-of-type {
     margin-left: 25px;
+}
+
+@media screen and (max-width: 550px) {
+    #navbar {
+        height: 120px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #navbar li {
+        margin: 0;
+    }
+
+    #navbar li:last-of-type {
+        margin-right: 0;
+    }
+
+    #web-dev_container {
+        margin: 0;
+    }
+
+    #welcome-section>div:last-of-type {
+        margin-top: 20px;
+    }
+
+    #welcome-section>div:last-of-type h2 {
+        display: block;
+    }
 }
